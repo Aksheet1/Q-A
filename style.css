@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #c6fced;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    background-color: #b8c6fe;
+    border: 1px solid #aaa;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    color: rgb(51,51,51);
+    width: 600px;
+}
+
+/* if the div .wrap has .active class */
+
+.wrap.active {
+    background-color: #fff;
+}
+
+.wrap_title {
+    margin: 0 35px 0 0;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.wrap_text {
+    display: none;
+    margin: 30px 0 0;
+}
+
+.wrap.active {
+    display: block;
+}
+
+.wrap_toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.wrap_toggle .fa-circle-chevron-down {
+    font-size: 1.5rem;
+    
+}
+
+.wrap-toggle:focus {
+    outline: none;
+}
+
+.wrap_toggle .fa-circle-xmark {
+    display: none;
+}
+
+.wrap.active .wrap_toggle .fa-circle-xmark {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.wrap.active .wrap_toggle .fa-circle-chevron-down {
+    display: none;
+}
+
+.wrap.active p {
+    display: block;
+}
+
+
